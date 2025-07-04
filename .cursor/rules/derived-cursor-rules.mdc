@@ -1,0 +1,25 @@
+---
+description: AI rules derived by SpecStory from the project AI interaction history
+globs: *
+---
+
+## HEADERS
+
+## TECH STACK
+
+## PROJECT DOCUMENTATION & CONTEXT SYSTEM
+
+## CODING STANDARDS
+
+### UnoCSS Styling
+- When applying UnoCSS classes, prioritize readability and maintainability.
+- Use descriptive class names that clearly indicate the intended style.
+- Ensure consistency in the use of font sizes, weights, colors, and spacing across different elements.
+- Consider using the following styles for common HTML elements:
+    - `h1`: `text-2xl font-bold text-gray-900 mb-2` (large font, bold, dark gray, bottom margin)
+    - `h2`: `text-lg font-medium text-gray-600 mb-3` (medium font, medium weight, medium gray, bottom margin)
+    - `p`: `text-base text-gray-700 leading-relaxed` (base font size, slightly dark gray, relaxed line height)
+
+## DEBUGGING
+
+## WORKFLOW & RELEASE RULES
