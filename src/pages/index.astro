@@ -1,6 +1,5 @@
 ---
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
+import Main from "../layouts/Main.astro";
 import Counter from "../components/Counter.vue";
 
 const profilePicture = "https://hips.hearstapps.com/hmg-prod/images/349056314-1437135447115539-4470955904918188787-n-64c23ae889b9d.jpg?crop=1xw:1xh;center,top&resize=980:*";
@@ -9,7 +8,7 @@ const profilePicture = "https://hips.hearstapps.com/hmg-prod/images/349056314-14
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
+<Main>
   <a href="/about" class="text-blue-600 hover:underline">About</a>
   <h1 class="text-3xl font-bold ">the world</h1>
   <div class="profile">
@@ -24,7 +23,7 @@ const profilePicture = "https://hips.hearstapps.com/hmg-prod/images/349056314-14
   </div>
   </div>
   <Counter client:load />
-</Layout>
+</Main>
 <style>
   .profile {
     display: flex;
