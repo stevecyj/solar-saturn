@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/vue": "^5.1.0",
+    "@unocss/preset-web-fonts": "^66.3.2",
     "astro": "^5.10.2",
     "vue": "^3.5.17"
   },

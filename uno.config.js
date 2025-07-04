@@ -1,5 +1,14 @@
-import { defineConfig } from "unocss";
+import { defineConfig, presetUno } from "unocss";
+import presetWebFonts from "@unocss/preset-web-fonts";
 
 export default defineConfig({
-  // ...UnoCSS 選項
+  presets: [
+    presetUno(),
+    presetWebFonts({
+      fonts: {
+        sans: "Inter",
+        mono: "Fira Code"
+      }
+    })
+  ]
 });
