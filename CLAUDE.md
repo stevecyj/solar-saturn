@@ -21,6 +21,13 @@ npm run astro add    # Add integrations (e.g., astro add vue)
 npm run astro check  # TypeScript diagnostics
 ```
 
+### Code Quality
+```bash
+# Formatting with Prettier (configured with Astro and UnoCSS plugins)
+npx prettier --write .
+npx prettier --check .
+```
+
 ## Architecture
 
 ### Component Types
@@ -40,24 +47,28 @@ Example: `<Counter client:load />`
 ### Project Structure
 - `src/pages/` - File-based routing (each .astro file becomes a route)
 - `src/components/` - Reusable Astro and Vue components
-- `src/layouts/` - Page layout templates
+- `src/layouts/` - Page layout templates (`Layout.astro`, `Main.astro`)
 - `src/assets/` - Static assets processed by Astro
 - `public/` - Static files served as-is
+- `.cursorindexingignore` - Cursor IDE indexing exclusions
+- `.specstory/` - Auto-save files (excluded from indexing)
 
 ## Key Technologies
 
 - **Astro 5.10.2**: Static site generator with hybrid rendering
 - **Vue 3.5.17**: For interactive components
-- **UnoCSS**: Atomic CSS framework (configured in `uno.config.js`)
+- **UnoCSS**: Atomic CSS framework (configured in `uno.config.js` with `injectReset: true`)
 - **TypeScript**: Strict mode enabled via `tsconfig.json`
-- **Prettier**: Configured with Astro and UnoCSS plugins
+- **Prettier**: Configured with Astro and UnoCSS plugins for code formatting
 
 ## Development Notes
 
 - When creating new pages, add `.astro` files to `src/pages/`
-- For interactive features, create Vue components and hydrate them appropriately
-- UnoCSS utilities are available globally (e.g., `flex`, `text-xl`, etc.)
+- For interactive features, create Vue components using Composition API with `<script setup>` syntax
+- UnoCSS utilities are available globally (e.g., `flex`, `text-xl`, etc.) with reset styles injected
 - TypeScript is configured with strict settings extending Astro's base config
+- Vue components can seamlessly use UnoCSS classes for styling
+- Project supports internationalization (Chinese text present in components)
 
 
 ## 🚨 CRITICAL RULES - READ FIRST
